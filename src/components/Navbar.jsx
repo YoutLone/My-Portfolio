@@ -23,6 +23,7 @@ const Navbar = () => {
           type="button"
           onClick={() => setOpen(!open)}
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          aria-label={open ? 'Close Menu' : 'Open Menu'}
         >
           <ion-icon name={open ? 'close' : 'menu'} />
         </button>

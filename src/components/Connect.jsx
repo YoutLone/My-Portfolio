@@ -8,6 +8,7 @@ const Connect = () => (
         href="https://github.com/YoutLone"
         target="_blank"
         rel="noreferrer"
+        aria-label="GitHub"
       >
         <ion-icon size="large" name="logo-github" />
       </a>
@@ -15,6 +16,7 @@ const Connect = () => (
         href="www.linkedin.com/in/thanmyohtet"
         target="_blank"
         rel="noreferrer"
+        aria-label="LinkedIn"
       >
         <ion-icon size="large" name="logo-linkedin" />
       </a>
