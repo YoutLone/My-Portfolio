@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 import Welcome from './components/Welcome';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <Container className="body-bgBackground">
       <Navbar />
       <Welcome />
+      <Projects />
       <About />
     </Container>
   );
