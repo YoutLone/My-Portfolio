@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? 'top-16 ' : 'top-[-490px]'
+            open ? 'top-20 ' : 'top-[-490px]'
           }`}
         >
           {Links.map((link) => (
@@ -69,7 +69,7 @@ const Section = styled.header`
 
   #logo {
     transition: transform 0.9s ease-out;
-    color: #6936f5;
+    color: #041d8c;
 
     &:hover {
       transform: rotate(360deg);
@@ -77,6 +77,6 @@ const Section = styled.header`
   }
 
   .active {
-    color: #6936f5;
+    color: #041d8c;
   }
 `;
