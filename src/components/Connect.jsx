@@ -13,7 +13,7 @@ const Connect = () => (
         <ion-icon size="large" name="logo-github" />
       </a>
       <a
-        href="www.linkedin.com/in/thanmyohtet"
+        href="https://www.linkedin.com/in/thanmyohtet"
         target="_blank"
         rel="noreferrer"
         aria-label="LinkedIn"
