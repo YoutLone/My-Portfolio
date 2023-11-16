@@ -36,13 +36,13 @@ const About = () => {
   const handleResumeClick = (e) => {
     e.preventDefault();
     window.open(
-      '',
+      'https://drive.google.com/file/d/1Q2bqNkbYtGvpmO_JnD3RLBB7pzrebkZ7/view?usp=drive_link',
     );
   };
   return (
     <Section
       id="about-me"
-      className="p-6 flex flex-col justify-center items-center bg-white md:flex-row md:p-32"
+      className="p-6 flex flex-col justify-center items-center md:flex-row md:p-32"
     >
       <article>
         <h1 className="text-4xl text-left w-full font-bold leading-relaxed">
