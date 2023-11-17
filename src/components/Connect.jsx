@@ -28,12 +28,12 @@ export default Connect;
 
 const Div = styled.div`
   ion-icon {
-    color: #505f79;
+    color: #2c7bf2;
     z-index: 0;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #6936f5;
+      color: #03275e;
     }
   }
 `;
