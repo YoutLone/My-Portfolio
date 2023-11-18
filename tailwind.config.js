@@ -16,6 +16,7 @@ module.exports = {
       logoColor6: '#ebebff',
       bodyBackground: '#9eb3b5',
       projectCardText: '#7A869A',
+      menuColor: '#b1c1c4',
     },
     extend: {},
   },
