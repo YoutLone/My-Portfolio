@@ -30,7 +30,7 @@ const Welcome = () => (
   >
     <Title className="text-xl sm:text-4xl text-left w-full font-bold leading-relaxed">
       <TypingAnimation>
-        I&apos;m THAN MYO HTET 👋
+        I&apos;M THAN MYO HTET 👋
         <br />
         Hello there! Nice to meet you 🤝
       </TypingAnimation>
