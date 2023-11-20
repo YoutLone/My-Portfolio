@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
         >
           <Image
             src={project.image}
-            className="py-2 px-1 md:px-2 hover:border hover:p-0"
+            className="py-2 px-1 md:px-2 hover:p-0"
             alt={project.name}
           />
           <span className="absolute live-demo p-1">Live demo</span>
@@ -108,6 +108,7 @@ const Li = styled.li`
 
     &:hover {
       transform: scale(1.05);
+      border: 2px solid #234261;
     }
   }
 
