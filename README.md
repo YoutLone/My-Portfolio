@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/my-logo.png" alt="logo" width="auto"  height="auto" />
+<img src="src/assets/my-logo.png" alt="logo" width="auto"  height="auto" />
   <br/>
   <h1>Portfolio - Than Myo Htet 🤘</h1>
 </div>
