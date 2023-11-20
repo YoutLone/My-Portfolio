@@ -62,9 +62,9 @@ const Projects = () => (
         href="https://github.com/YoutLone"
         target="_blank"
         rel="noreferrer"
-        className="text-logoColor6 hover:underline"
+        className="text-logoColor4 hover:underline"
       >
-        <h2 className="text-logoColor4">More Projects &gt;&gt; </h2>
+        <h2 className="text-logoColor3">More Projects &gt;&gt; </h2>
       </a>
     </ul>
   </Section>
