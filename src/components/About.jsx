@@ -49,7 +49,7 @@ const About = () => {
           About Me
         </h1>
         <p className="text-lg text-left py-4">
-          Hello, I&apos;m HTET, a recent graduate of Microverse&apos;s
+          Hello, I&apos;m Htet, a recent graduate of Microverse&apos;s
           Full-Stack development program, and my path to becoming a software
           engineer is a unique one. With a background in Electrical Engineer
           my journey into the world of software development.Through my experiences and
