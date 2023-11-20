@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import myLogo from '../assets/my-logo.png';
 
 const Navbar = () => {
   const Links = [
@@ -14,10 +15,10 @@ const Navbar = () => {
 
   return (
     <Section className="shadow-md w-full fixed top-0 left-0 bg-white">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800">
-          <span id="logo" className="text-3xl text-indigo-600">
-            <h1 className="logo">TM HTET</h1>
+          <span id="logo" className="text-3xl text-indigo-600 circle-logo">
+            <img src={myLogo} alt="My Logo" className="logo" />
           </span>
         </div>
 
@@ -69,6 +70,19 @@ const Section = styled.header`
   z-index: 999;
   ion-icon {
     color: #6936f5;
+  }
+
+  .circle-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #logo {
