@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import FeedbackCard from './FeedbackCard';
 
 const feedbacks = [
   {
@@ -13,7 +14,7 @@ const feedbacks = [
                 `,
     image: 'https://avatars.githubusercontent.com/u/117971223?v=4',
     Github: 'https://github.com/AnsarIbrahim',
-    likedin: 'https://www.linkedin.com/in/ansar-ibrahim/',
+    linkedin: 'https://www.linkedin.com/in/ansar-ibrahim/',
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ const feedbacks = [
                 `,
     image: 'https://avatars.githubusercontent.com/u/67812267?v=4',
     Github: 'https://github.com/aradradev',
-    likedin: 'https://www.linkedin.com/in/abdul-jalloh/',
+    linkedin: 'https://www.linkedin.com/in/abdul-jalloh/',
   },
   {
     id: 3,
@@ -41,7 +42,7 @@ const feedbacks = [
                 `,
     image: 'https://avatars.githubusercontent.com/u/88501552?v=4',
     Github: 'https://github.com/zuhebahmed88091',
-    likedin: 'https://www.linkedin.com/in/zuheb-ahmed/',
+    linkedin: 'https://www.linkedin.com/in/zuheb-ahmed/',
   },
   {
     id: 4,
@@ -56,15 +57,17 @@ const feedbacks = [
                 `,
     image: 'https://avatars.githubusercontent.com/u/102011195?v=4',
     Github: 'https://github.com/HtetWaiYan7191',
-    likedin: 'https://www.linkedin.com/in/htet-wai-yan19/',
+    linkedin: 'https://www.linkedin.com/in/htet-wai-yan19/',
   },
 ];
 
 const Feedback = () => (
-  <Section id="feedback">
-    <div>
-      <h1>This is Feedback page.</h1>
-    </div>
+  <Section id="feedback" className="py-28">
+    <ul className="flex flex-col items-center">
+      {feedbacks.map((feedback) => (
+        <FeedbackCard key={feedback.id} feedback={feedback} />
+      ))}
+    </ul>
   </Section>
 );
 
