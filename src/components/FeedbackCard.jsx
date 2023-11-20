@@ -4,36 +4,47 @@ import PropTypes from 'prop-types';
 import { Image } from 'react-bootstrap';
 import Button from './Button';
 
-const FeedbackCard = ({ feedback }) => (
-  <Li className="m-6 p-4 flex flex-col gap-3">
-    <div className="flex flex-col">
-      <div>
-        <Image
-          src={feedback.image}
-          className="rounded-full w-20 h-20 object-cover mx-auto"
-          alt={feedback.name}
-        />
-      </div>
-      <div className="flex flex-col items-center mt-4">
-        <h2 className="text-logoColor4">{feedback.name}</h2>
-        <p className="text-center">{feedback.description}</p>
-        <div className="flex gap-2 items-center mt-4">
-          <a href={feedback.Github} target="_blank" rel="noreferrer">
-            <Button className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-              GitHub
-            </Button>
+const FeedbackCard = ({ feedback }) => {
+  const handleGitHubClick = (e) => {
+    e.preventDefault();
+    window.open(feedback.Github);
+  };
 
-          </a>
-          <a href={feedback.linkedin} target="_blank" rel="noreferrer">
-            <Button className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-              LinkedIn
-            </Button>
-          </a>
+  const handleLinkedInClick = (e) => {
+    e.preventDefault();
+    window.open(feedback.linkedin);
+  };
+
+  return (
+    <Li className="m-6 p-4 flex flex-col gap-3">
+      <div className="flex flex-col">
+        <div>
+          <Image
+            src={feedback.image}
+            className="rounded-full w-20 h-20 object-cover mx-auto"
+            alt={feedback.name}
+          />
+        </div>
+        <div className="flex flex-col items-center mt-4">
+          <h2 className="text-logoColor3">{feedback.name}</h2>
+          <p className="text-center">{feedback.description}</p>
+          <div className="flex gap-2 items-center mt-4">
+            <a href={feedback.Github} target="_blank" rel="noreferrer">
+              <Button handleClick={handleGitHubClick}>
+                GitHub
+              </Button>
+            </a>
+            <a href={feedback.linkedin} target="_blank" rel="noreferrer">
+              <Button handleClick={handleLinkedInClick}>
+                LinkedIn
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </Li>
-);
+    </Li>
+  );
+};
 
 export default FeedbackCard;
 
