@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Button = ({ children, button, handleClick }) => (
-  <BigButton type={button ? 'button' : 'submit'} className="w-fit p-4 rounded-lg my-5 border-2 border-logoColor2 tracking-wide text-logoColor2 bg-blue" onClick={(e) => { handleClick(e); }}>
+const Button = ({ children, button }) => (
+  <BigButton
+    type={button ? 'button' : 'submit'}
+    className="w-fit p-4 rounded-lg my-5 border-2 border-logoColor2 tracking-wide text-logoColor2 bg-blue"
+  >
     {children}
   </BigButton>
 );
@@ -10,7 +13,6 @@ const Button = ({ children, button, handleClick }) => (
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   button: PropTypes.bool,
-  handleClick: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
