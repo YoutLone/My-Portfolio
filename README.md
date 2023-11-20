@@ -37,7 +37,7 @@ This portfolio presents my proficiency and background in utilizing React JS, HTM
 
 ## Live Demo
 
-To see this project's live demo, please click [here]().
+To see this project's live demo, please click [here](https://my-portfolio-xuoj.onrender.com/).
 
 ## 🛠 Built With <a name="built-with"></a>
 
