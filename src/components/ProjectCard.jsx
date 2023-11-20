@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
         </a>
       </div>
       <div className="flex flex-col md:gap-5 md:w-1/2">
-        <h2 className="text-logoColor4">{project.name}</h2>
+        <h1 className="text-logoColor3">{project.name}</h1>
         <div>
           <span className="text-logoColor2 font-semibold">
             {project.type[0]}
@@ -50,7 +50,7 @@ const ProjectCard = ({ project }) => {
           {project.technology.map((tech) => (
             <span
               key={tech}
-              className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide"
+              className="bg-logoColor4 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide"
             >
               {tech}
             </span>
@@ -86,11 +86,12 @@ const Li = styled.li`
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  h2 {
+  h1 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0.5rem 0;
   }
+
   p {
     font-size: 1rem;
     font-weight: 400;
