@@ -58,10 +58,41 @@ const Projects = () => (
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
+      <a
+        href="https://github.com/YoutLone"
+        target="_blank"
+        rel="noreferrer"
+        className="text-logoColor6 hover:underline"
+      >
+        <h2 className="text-logoColor4">More Projects &gt;&gt; </h2>
+      </a>
     </ul>
   </Section>
 );
 
 export default Projects;
 
-const Section = styled.section``;
+const Section = styled.section`
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+a {
+  font-size: 1rem;
+  color: #6936f5;
+}
+
+h2:hover {
+  color: #dcf7fa;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f50713;
+  background-color: #445557;
+  border: 1px solid #92b2b3;
+  border-radius: 5px;
+}
+`;
