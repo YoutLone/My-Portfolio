@@ -52,7 +52,7 @@ const Navbar = () => {
                 onClick={() => {
                   setOpen(false);
                 }}
-                className="text-gray-800 hover:text-logoColor font-black duration-500"
+                className="text-red font-black duration-500"
               >
                 {link.name}
               </Link>
@@ -70,6 +70,14 @@ const Section = styled.header`
   z-index: 999;
   ion-icon {
     color: #6936f5;
+  }
+
+  .text-red {
+    color: #fafafa;
+
+    &:hover {
+      color: #00e5fe;
+    }
   }
 
   .circle-logo {

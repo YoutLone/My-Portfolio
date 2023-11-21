@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Connect from './Connect';
-import headlineShapes from '../assets/banner-bg.png';
+// import headlineShapes from '../assets/banner-bg.png';
 import headerImg from '../assets/header-img.svg';
 
 const borderRadiusValue = '0 0 0 4rem';
@@ -51,13 +51,6 @@ export default Welcome;
 const Section = styled.section`
   position: relative;
   border-radius: ${(props) => props.borderRadius};
-  background-image: 
-    url(${headlineShapes}), 
-    url(${headerImg}); 
-
-  background-repeat: no-repeat;
-  background-size: cover, 350px 350px;
-
   &:before {
     content: '';
     position: absolute;
@@ -97,5 +90,5 @@ const TypingAnimation = styled.div`
 `;
 
 const Description = styled.p`
-  color: #a6f5a9;
+  color: black;
 `;
